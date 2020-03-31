@@ -1,28 +1,102 @@
-title: John Smith
-description: My Personal Blog
-author: John Smith
-logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/codeasashu
-about: Freelance developer
+title: HUFS OPTLAB
+url: "http://hufsoptblog.github.io"
+baseurl:
+google_analytics_key:
+google_maps_javascript_api_key:
+disqus_shortname: hufsoptlab
 
-baseurl: "https://codeasashu.github.io/hcz-jekyll-blog"
-url: "https://codeasashu.github.io/hcz-jekyll-blog"
+disqus_url : http://hufsoptlab.disqus.com/embed.js
+disqus_id : 65HYjgoI8N
 
-allowsearch: true
+# Default description in social shares for the jekyll-seo-tag gem
+description: 한국외국어대학교 최적화연구실
 
-disqus_shortname: aboutashu
-google_analytics: UA-72862926-1
+# Author details for the jekyll-seo-tag gem
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
 
-share:
-  twitter_username: \#
-  fb_appid: 000000000000
+# Social details for the jekyll-seo-tag gem
+social:
+  name: 
+  links:
 
+timezone: Etc/UTC
 
-enableTags: true
-tagarray: []
+collections:
+  staff_members:
+    output: false
+  clients:
+    output: true
 
-paginate: 20
-per_page: 20
-paginate_path: "/page:num/"
-markdown: kramdown
-gems: [jekyll-paginate, jekyll-gist]
+paginate: 10
+paginate_path: "/blog/:num/"
+permalink: pretty
+
+jekyll-archives:
+  enabled:
+    - "categories"
+
+plugins:
+  - "jekyll-feed"
+  - "jekyll-seo-tag"
+  - "jekyll-paginate"
+  - "jekyll-archives"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        content:
+          width: 960
+          height: 2000
+  - scope:
+      path: ""
+      type: "clients"
+    values:
+      layout: "client"
+      _options:
+        image_path:
+          width: 2000
+          height: 600
+  - scope:
+      path: ""
+      type: "staff_members"
+    values:
+      _options:
+        image_path:
+          width: 600
+          height: 600
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "index.html"
+      type: "pages"
+    values:
+      layout: "default"
+
+# -----------
+# CloudCannon
+
+social_icons:
+  - Facebook
+  - Instagram
+  - LinkedIn
+  - Pinterest
+  - Tumblr
+  - Twitter
+  - YouTube
+  - RSS

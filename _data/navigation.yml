@@ -1,0 +1,10 @@
+links:
+- name: MEMBERS
+  link: /test/
+- name: RESEARCH
+  link: /portfolio/
+- name: SEMINAR
+  link: /blog/
+- name: CONTACT
+  link: /contact/
+
