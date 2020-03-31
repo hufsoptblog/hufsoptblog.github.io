@@ -5,9 +5,6 @@ google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname: hufsoptlab
 
-disqus_url : http://hufsoptlab.disqus.com/embed.js
-disqus_id : 65HYjgoI8N
-
 # Default description in social shares for the jekyll-seo-tag gem
 description: 한국외국어대학교 최적화연구실
 
