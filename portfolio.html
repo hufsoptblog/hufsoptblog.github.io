@@ -1,9 +1,9 @@
 ---
 title: Research
 heading: Research
-subtitle: The research fields are as follows. <br> <h4> 최적화 랩 연구 분야 입니다. </h4>
+subtitle: <h4> 최적화 연구실 관련 연구 분야 입니다. </h4>
 ---
-
+<!-- 
 <section class="diagonal patterned">
 	<div class="container">
 	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_clients/" class="btn"><strong>&#9998;</strong> Manage Clients</a></p>
@@ -11,10 +11,10 @@ subtitle: The research fields are as follows. <br> <h4> 최적화 랩 연구 분
 			{% for client in site.clients %}
 				<li>
 					<a href="{{ site.baseurl }}{{ client.url }}">
-						<img src="{% include relative-src.html src=client.image_path %}" alt="{{ person.name }}">
+						<img src="{% include relative-src.html src=client.image_path %}" alt="{{ person.name }}" >
 						<div class="details">
-							<div class="name">{{ client.name }}</div>
-							<div class="position">{{ client.subtitle }}</div>	
+							<div class="name " align="center">{{ client.name }}</div>
+							<div class="position" align="center" style="color : rgb(255, 187, 0); font_size: 1.5em; font-weight:600;" >{{ client.subtitle }}</div>	
 						</div>
 					</a>
 				</li>
@@ -23,4 +23,88 @@ subtitle: The research fields are as follows. <br> <h4> 최적화 랩 연구 분
 			<li class="filler"></li>
 		</ul>
 	</div>
+</section> -->
+
+<section class="diagonal">
+	<div class="container halves">
+		<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_clients/" class="btn"><strong>&#9998;</strong> Manage Clients</a></p>
+
+			<div style="width:380px; height:330px; border:0px solid red; float:left; margin-right:50px; ">
+				<p style="text-align: center; color : rgb(3, 2, 85);">
+					<img src="/images/clients/5G_plans.jpg" width="380" height="600" ><br>
+					Telecommunication Network Design
+					<hr width="400">
+				</p>	
+				<div style="text-align: center; font-weight:700; font-size:1.2em; margin-left: 1em;">
+					네트워크 링크의 경로를 결정하기 위한 알고리즘 개발
+				</div>
+				<br>
+				<div style="font-weight:300; font-size:1.2em; margin-left: 1.7em;">
+					링크용량에서 발생하는 접속(Connection) 비용과 링크용량의 한계때문에 생기는 대기(Queueing) 비용이 발생한다. 
+					관련된 비용을 최소화하는 것은 통신 네트워크의 속도와 품질에 밀접한 관련이 있으므로 네트워크 링크의 경로를 결정하는 것이 중요하다. 
+				</div>
+
+				</div>
+
+				<div style="width:1000px; height:330px; border:0px solid green; float:left;">
+					<p style="text-align: center; color : rgb(3, 2, 85);">
+					<img src="/images/clients/Logistics-Planning.jpg" width="380" height="600" ><br>
+					Logistics Planning
+					<hr width="400">
+					</p>	
+					<div style="text-align: center; font-weight:700; font-size:1.2em; margin-left: 0.3em;">
+						네트워크 링크의 경로를 결정하기 위한 알고리즘 개발
+					</div>
+					<br>
+					<div style="font-weight:300; font-size:1.2em; margin-left: 0.9em;">
+						링크용량에서 발생하는 접속(Connection) 비용과 링크용량의 한계때문에 생기는 대기(Queueing) 비용이 발생한다. 
+						관련된 비용을 최소화하는 것은 통신 네트워크의 속도와 품질에 밀접한 관련이 있으므로 네트워크 링크의 경로를 결정하는 것이 중요하다. 
+					</div>
+					</div>	
+
+	</div>
+
+</section>
+
+
+<section class="diagonal">
+	<div class="container halves">
+		<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_clients/" class="btn"><strong>&#9998;</strong> Manage Clients</a></p>
+
+			<div style="width:380px; height:450px; border:0px solid red; float:left; margin-right:50px; ">
+				<p style="text-align: center; color : rgb(3, 2, 85);">
+					<img src="/images/clients/scm.jpg" width="380" height="600" ><br>
+					Supply Chain Management
+					<hr width="400">
+				</p>	
+				<div style="text-align: center; font-weight:700; font-size:1.2em; margin-left: 1em;">
+					제품의 저장 및 배송과 관련된 프로세스 알고리즘 개발
+				</div>
+				<br>
+				<div style="font-weight:300; font-size:1.2em; margin-left: 1.7em;">
+					공장에서 최종 사용자인 고객에게 완제품을 배송하기 위해 차량 용량, 비용, 시간 등을 고려하여 경로를 짜야한다. 
+					이러한 문제는 여러가지 요소가 복잡하게 얽혀있으므로 경로를 결정하기 쉽지않다. 
+					따라서 최소비용으로 최대이익을 낼 수 있는 경로에 대해 연구한다.
+				</div>
+
+				</div>
+
+				<div style="width:1000px; height:450px; border:0px solid green; float:left;">
+					<p style="text-align: center; color : rgb(3, 2, 85);">
+					<img src="/images/clients/dm.jpg" width="380" height="600" ><br>
+					Data Mining
+					<hr width="400">
+					</p>	
+					<div style="text-align: center; font-weight:700; font-size:1.2em; margin-left: 0.3em;">
+						네트워크 링크의 경로를 결정하기 위한 알고리즘 개발
+					</div>
+					<br>
+					<div style="font-weight:300; font-size:1.2em; margin-left: 0.9em;">
+						링크용량에서 발생하는 접속(Connection) 비용과 링크용량의 한계때문에 생기는 대기(Queueing) 비용이 발생한다. 
+						관련된 비용을 최소화하는 것은 통신 네트워크의 속도와 품질에 밀접한 관련이 있으므로 네트워크 링크의 경로를 결정하는 것이 중요하다. 
+					</div>
+					</div>	
+
+	</div>
+
 </section>

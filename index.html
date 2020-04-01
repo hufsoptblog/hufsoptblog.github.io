@@ -19,13 +19,16 @@ title: HUFS OPTLAB
 	<div class="container halves">
 		<div>
 			<h3 class="editable">Some of our research</h3>
-			<p class="editable"> 어려운 최적화 문제를 좀더 효율적인 계산 방법을 만들어 빠르게 계산하기 위하여 연구한다. </p>
-			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View All &rarr;</a></p>
+			<p class="editable" style="margin-left: 0.5em; color: rgb(255, 196, 0);" > - Telecommunication Network Design <br> 
+				- Logistics Planning <br> - Supply Chain Management<br> - Data Mining 
+			  </p>
+			<p class="editable" style="margin-left: 0.9em;"><a href="{{ site.baseurl }}/portfolio/">View Details &rarr;</a></p>
 		</div>
 		<div>
 			<ul class="image-grid">
 				{% for client in site.clients limit: 4 %}
-					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+					<!-- <li><a href="{{ site.baseurl }}{{ client.url }}"></a><img src="{% include relative-src.html src=client.image_path %}"></a></li> -->
+					<li></a><img src="{% include relative-src.html src=client.image_path %}"></a></li>
 				{% endfor %}
 			</ul>
 		</div>

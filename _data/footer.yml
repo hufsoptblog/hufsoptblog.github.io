@@ -6,7 +6,9 @@
       link: /test/
     - name: RESEARCH
       link: /portfolio/
-    - name: SEMINAR
+    - name: PUBLICATION
+      link: /publication/
+    - name: BOARD
       link: /blog/
     - name: CONTECT
       link: /contact/
