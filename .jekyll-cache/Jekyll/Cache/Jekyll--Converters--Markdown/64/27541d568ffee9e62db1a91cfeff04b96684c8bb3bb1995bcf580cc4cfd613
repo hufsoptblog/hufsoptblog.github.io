@@ -1,0 +1,2 @@
+I"‘<p>When <u>vehicle routing problems</u> with additional constraints, such as capacity or time windows, <u>are solved via column generation and branch-and-price</u>, it is common that the pricing subproblem requires the computation of a minimum cost constrained path on a graph with costs on the arcs and prizes on the vertices. A common solution technique for this problem is dynamic programming.</p>
+:ET
