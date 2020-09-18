@@ -1,0 +1,51 @@
+---
+title: HUFS OPTLAB
+---
+
+<section class="hero diagonal">
+	<div class="container">
+		<h3  class="editable"><strong>한국외국어대학교 최적화 연구실</strong></h3>
+		<p class="subtext editable"><h4>
+		Hankuk Univ. of Foreign Studies<br>
+		Dept. of Industrial and Management Engineering <br>
+		Optimization Lab 
+		</h4></p>
+
+		<!-- <p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p> -->
+	</div>
+</section>
+
+<section class="diagonal patterned">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">Some of our research</h3>
+			<p class="editable" style="margin-left: 0.5em; color: rgb(255, 196, 0);" > - Telecommunication Network Design <br> 
+				- Logistics Planning <br> - Supply Chain Management<br> - Data Mining 
+			  </p>
+			<p class="editable" style="margin-left: 0.9em;"><a href="{{ site.baseurl }}/portfolio/">View Details &rarr;</a></p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				{% for client in site.clients limit: 4 %}
+					<!-- <li><a href="{{ site.baseurl }}{{ client.url }}"></a><img src="{% include relative-src.html src=client.image_path %}"></a></li> -->
+					<li></a><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal alternate">
+	<div class="container halves">
+		<div>
+			<ul class="image-list">
+				<li><img src="{{ site.baseurl }}/images/도형.png" width="400"></li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="editable">Operations Research, <br>Optimization</h3>
+			<p class="editable"> 최적화 연구실에서는 주로 수리계획법을 사용한 최적화 기법을 연구한다. 
+				통신, 물류, 제조, 금융, 데이터 마이닝 등 다양한 분야의 일반적인 최적화 이론과 방법론을 중심으로 연구를 수행한다.</p>
+		</div>
+	</div>
+</section>
